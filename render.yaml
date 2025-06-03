@@ -4,8 +4,9 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    rootDir: .
+    buildCommand: cd ikigai-Backend && npm install && npm run build
+    startCommand: cd ikigai-Backend && npm start
     envVars:
       - key: NODE_ENV
         value: production
