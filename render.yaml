@@ -6,6 +6,7 @@ services:
     plan: free
     rootDir: .
     buildCommand: |
+      cd ikigai-Backend
       echo "Current directory: $(pwd)"
       echo "Directory contents:"
       ls -la
@@ -18,6 +19,7 @@ services:
       echo "Dist directory contents:"
       ls -la dist || echo "Dist directory not found!"
     startCommand: |
+      cd ikigai-Backend
       echo "Starting application from: $(pwd)"
       echo "Directory contents:"
       ls -la
