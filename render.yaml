@@ -4,7 +4,7 @@ services:
     env: node
     region: oregon
     plan: free
-    rootDir: ikigai-Backend
+    rootDir: .
     buildCommand: |
       echo "Current directory: $(pwd)"
       echo "Directory contents:"
